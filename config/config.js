@@ -15,10 +15,10 @@ module.exports  = {
     "dialect": "mysql"
   },
   "production": {
-    "username": process.env.DB_USERNAME,
-    "password": process.env.DB_PASSWORD,
-    "database": process.DB,
-    "host": process.env.DB_HOST,
+    "username": "bsjhgdulwewjha",
+    "password": "5d742ded5fd738332cee7c56966900154e95667802bf1ea54a74f59ddd316e04",
+    "database": "d13o3cjf5irc0l",
+    "host": "ec2-50-19-127-115.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
