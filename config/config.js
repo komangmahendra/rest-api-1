@@ -1,4 +1,5 @@
-{
+
+module.exports  = {
   "development": {
     "username": "postgres",
     "password": 12345,
@@ -14,10 +15,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "xgcbamhpvtprun",
-    "password": "8653b8960e8057bbe20910dab569017386fc8f66adbe1663306d14f713508545",
-    "database": "d796tbnm98qciq",
-    "host": "ec2-54-225-76-136.compute-1.amazonaws.com",
+    "username": process.env.DB_USERNAME,
+    "password": process.env.DB_PASSWORD,
+    "database": process.DB,
+    "host": process.env.DB_HOST,
     "dialect": "postgres"
   }
 }
+
