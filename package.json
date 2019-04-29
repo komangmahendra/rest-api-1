@@ -1,0 +1,30 @@
+{
+  "name": "rest-api-1",
+  "version": "1.0.0",
+  "description": "##  Get all the todos info ```     URL : /api/todos     Method : GET     Headers: token=[string]     Authenticate = YES     Body : None     Params : None     Success Response :         Code 200         [             {                 \"id\": 7,                 \"title\": \"pergi ke rumah nenek\",                 \"description\": \"asik sekali\",                 \"createdAt\": \"2019-04-29T10:12:22.002Z\",                 \"updatedAt\": \"2019-04-29T10:12:22.002Z\",                 \"userId\": 8             },             { <object>}         ]     Error Response :         Code: 500          Content: { message : <error message> } ``` ##  Get a single todo info  ```     URL : /api/todos/:id     Method : GET     Headers: token=[string]     Authenticate = YES     Authorization = YES     Body : None     Params : id=[string]     Success Response :         Code 200             {                 \"id\": 7,                 \"title\": \"pergi ke rumah nenek\",                 \"description\": \"asik sekali\",                 \"createdAt\": \"2019-04-29T10:12:22.002Z\",                 \"updatedAt\": \"2019-04-29T10:12:22.002Z\",                 \"userId\": 8             }     Error Response :         Code: 500          Content: { message : <error message> } ``` ##  create a todo ```     URL : /api/todos     Method : POST     Headers: token=[string]     Authenticate = YES     Body : title=[string], description=[string]     Params : None     Success Response :         Code 201             {                 \"id\": 7,                 \"title\": \"pergi ke rumah nenek\",                 \"description\": \"asik sekali\",                 \"createdAt\": \"2019-04-29T10:12:22.002Z\",                 \"updatedAt\": \"2019-04-29T10:12:22.002Z\",                 \"userId\": 8             }     Error Response :         Code: 500          Content: { message : <error message> } ``` ##  Delete a todo  ```     URL : /api/todos/:id     Method : POST     Headers: token=[string]     Authenticate = YES     Authorization = YES     Body : None     Params : id=[string]     Success Response :         Code 204",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.10.0",
+    "sequelize": "^5.7.6"
+  },
+  "devDependencies": {
+    "dotenv": "^7.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komangmahendra/rest-api-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/komangmahendra/rest-api-1/issues"
+  },
+  "homepage": "https://github.com/komangmahendra/rest-api-1#readme"
+}
